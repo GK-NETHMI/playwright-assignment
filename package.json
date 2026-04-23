@@ -1,5 +1,43 @@
 {
+  "name": "sqa-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:resize": "playwright test tests/resize-image.spec.ts",
+    "test:bulk-resize": "playwright test tests/bulk-resize.spec.ts",
+    "test:enlarger": "playwright test tests/image-enlarger.spec.ts",
+    "test:compress": "playwright test tests/compress-image.spec.ts",
+    "test:png-compressor": "playwright test tests/png-compressor.spec.ts",
+    "test:gif-compressor": "playwright test tests/gif-compressor.spec.ts",
+    "test:convert": "playwright test tests/convert-image.spec.ts",
+    "test:flip": "playwright test tests/flip-image.spec.ts",
+    "test:color-picker": "playwright test tests/color-picker.spec.ts",
+    "test:image-to-pdf": "playwright test tests/image-to-pdf.spec.ts",
+    "test:pdf-to-word": "playwright test tests/pdf-to-word.spec.ts",
+    "test:word-to-pdf": "playwright test tests/word-to-pdf.spec.ts",
+    "test:pdf-editor": "playwright test tests/pdf-editor.spec.ts",
+    "test:resize-new": "playwright test tests/resize.spec.ts",
+    "test:rotate": "playwright test tests/rotate.spec.ts",
+    "test:meme": "playwright test tests/meme.spec.ts",
+    "test:crop": "playwright test tests/crop.spec.ts",
+    "test:image-to-text": "playwright test tests/image-to-text.spec.ts",
+    "test:all-resize": "playwright test tests/resize-image.spec.ts tests/bulk-resize.spec.ts tests/image-enlarger.spec.ts",
+    "test:all-compress": "playwright test tests/compress-image.spec.ts tests/png-compressor.spec.ts tests/gif-compressor.spec.ts",
+    "test:all-convert": "playwright test tests/convert-image.spec.ts",
+    "test:all-tools": "playwright test tests/flip-image.spec.ts tests/color-picker.spec.ts",
+    "test:all-new": "playwright test tests/resize-image.spec.ts tests/bulk-resize.spec.ts tests/image-enlarger.spec.ts tests/compress-image.spec.ts tests/png-compressor.spec.ts tests/gif-compressor.spec.ts tests/convert-image.spec.ts tests/flip-image.spec.ts tests/color-picker.spec.ts tests/image-to-pdf.spec.ts tests/pdf-to-word.spec.ts tests/word-to-pdf.spec.ts tests/pdf-editor.spec.ts tests/resize.spec.ts tests/rotate.spec.ts tests/meme.spec.ts tests/image-to-text.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.59.1"
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
   }
 }
